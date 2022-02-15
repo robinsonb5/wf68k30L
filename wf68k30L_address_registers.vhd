@@ -148,7 +148,7 @@ signal AR_USED_1        : std_logic_vector(3 downto 0);
 signal AR_USED_2        : std_logic_vector(3 downto 0);
 signal B_S              : std_logic := '0'; -- Base register suppress.
 signal BD_SIZE          : std_logic_vector(1 downto 0); -- Indexed / Indirect.
-signal DFC_REG          : std_logic_vector(2 downto 0); -- Special function code registers.
+--signal DFC_REG          : std_logic_vector(2 downto 0); -- Special function code registers.
 signal F_E              : std_logic; -- Full extension word.
 signal I_IS             : std_logic_vector(2 downto 0); -- Indexed / Indirect.
 signal I_S              : std_logic; -- Index suppress.
@@ -157,7 +157,7 @@ signal MSBIT            : std_logic_vector(1 downto 0);
 signal MSP_REG          : std_logic_vector(31 downto 0); -- Master stack pointer (refers to A7' in the supervisor mode).
 signal PC_I             : std_logic_vector(31 downto 0); -- Active program counter.
 signal SCALE            : std_logic_vector(1 downto 0); -- Scale information for the index.
-signal SFC_REG          : std_logic_vector(2 downto 0); -- Special function code registers.
+--signal SFC_REG          : std_logic_vector(2 downto 0); -- Special function code registers.
 signal USP_REG          : std_logic_vector(31 downto 0); -- User stack pointer (refers to A7 in the user mode.).
 begin
     INBUFFER: process
